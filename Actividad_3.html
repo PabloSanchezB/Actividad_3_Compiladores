@@ -1,0 +1,91 @@
+<!--Autor: Pablo Sanchez (Codigo: 2018214003)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #cfcfcf;">
+
+    <script src="./Actividad_3.js"></script>
+
+    <hl>PALABRAS</hl>
+    <br><br>
+    <hl>Introducir palabra. Los espacios seran ignorados.</hl>
+    <br>
+    Palabra: <input type="text" id="palabra" size="40">
+    <br>
+    <select id="moduPal">
+        <option value="card">Calcular cardinalidad</option>
+        <option value="invr">Invertir palabra</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Efectuar" onclick="modPal();">
+    <br>
+    Resultado: <input type="text" id="resulPal" size="40">
+    <br><br><br><br>
+    <hl>ALFABETOS</hl>
+    <br><br>
+    <hl>Introducir alfabeto con los simbolos separados por comas.</hl><br>
+    <hl>Los espacios, las comas sin nada entre ellas y los simbolos repetidos seran ignorados. </hl>
+    <br>
+    <hl>Alfabeto 1:</hl>
+    <br>
+    <input type="text" id="alfa1" size="215">
+    <br>
+    <hl>Alfabeto 2:</hl>
+    <br>
+    <input type="text" id="alfa2" size="215">
+    <br>
+    <select id="moduAlfa">
+        <option value="union">Union</option>
+        <option value="difer12">Diferencia (1-2)</option>
+        <option value="difer21">Diferencia (2-1)</option>
+        <option value="intersec">Interseccion</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Efectuar" onclick="modAlfa();">
+    <br>
+    <hl>Resultado:</hl>
+    <br> 
+    <input type="text" id="resulAlfa" size="215">
+    <br><br><br><br>
+    <hl>LENGUAJES</hl>
+    <br><br>
+    <hl>Introducir lenguaje con las palabras separadas por comas.</hl><br>
+    <hl>Los espacios, las comas sin nada entre ellas y las palabras repetidas seran ignorados. </hl>
+    <hl>El asterisco (*) se tomara como palabra vacia. Una potencia negativa se tomara como 0.</hl>
+    <br>
+    <hl>Lenguaje 1:</hl>
+    <br>
+    <input type="text" id="leng1" size="215">
+    <br>
+    <hl>Lenguaje 2:</hl>
+    <br>
+    <input type="text" id="leng2" size="215">
+    <br>
+    Potencia: <input type="number" id="pote">
+    <br>
+    <select id="moduLeng">
+        <option value="union">Union</option>
+        <option value="difer12">Diferencia (1-2)</option>
+        <option value="difer21">Diferencia (2-1)</option>
+        <option value="intersec">Interseccion</option>
+        <option value="concaten12">Concatenacion (L1.L2)</option>
+        <option value="concaten21">Concatenacion (L2.L1)</option>
+        <option value="pot1">Potencia (Lenguaje 1)</option>
+        <option value="pot2">Potencia (Lenguaje 2)</option>
+        <option value="inv1">Inversa (Lenguaje 1)</option>
+        <option value="inv2">Inversa (Lenguaje 2)</option>
+        <option value="card1">Cardinalidad (Lenguaje 1)</option>
+        <option value="card2">Cardinalidad (Lenguaje 2)</option>
+    </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="button" value="Efectuar" onclick="modLeng();">
+    <br>
+    <hl>Resultado:</hl>
+    <br> 
+    <textarea id="resulLeng" cols="161"></textarea>
+    <br><br><br><br>
+    
+</body>
+</html>
